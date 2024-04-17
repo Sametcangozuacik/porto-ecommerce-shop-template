@@ -1,0 +1,731 @@
+.header-box {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-link-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: "Poppins", sans-serif;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header-nav-link-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: "Poppins", sans-serif;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header-logo {
+    width: 150px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    /* Ekranın tamamını kaplamasını sağlar */
+    overflow: hidden;
+    /* Taşan içeriği gizler */
+}
+
+#imageContainer {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.arrow-button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    left: 10px;
+    /* Sol butonun sol kenara olan mesafesi */
+}
+
+.right {
+    right: 10px;
+    /* Sağ butonun sağ kenara olan mesafesi */
+}
+
+.Products-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px auto;
+    max-width: 1400px;
+
+}
+
+.Products-box-p {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+.Products-box-h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.Products-box-h6 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.Products-box {
+    /* Her ürün kutusu arasına boşluk ekleyelim */
+    border: 2px solid gray;
+    background-color: #fff;
+    /* Tüm ürün kutularına gri border ekle */
+}
+
+.Products-box:nth-child(4),
+.Products-box:nth-child(5) {
+    border-right: 1px solid gray;
+    /* Dördüncü ve beşinci ürün kutularının sağında border ekle */
+    border-bottom: none;
+    /* Dördüncü ve beşinci ürün kutularının altında border olmasın */
+}
+
+.Products-box:nth-child(1),
+.Products-box:nth-child(2),
+.Products-box:nth-child(3) {
+    border-top: none;
+    /* Dördüncü ve beşinci ürün kutularının sağında border ekle */
+    border-bottom: none;
+    /* Dördüncü ve beşinci ürün kutularının altında border olmasın */
+}
+
+.Products-box:nth-child(1),
+.Products-box:nth-child(4) {
+    border-left: none;
+}
+
+.Products-box:nth-child(3),
+.Products-box:nth-child(6) {
+    border-right: none;
+}
+
+.Products-box:nth-child(6) {
+    border-bottom: none;
+}
+
+.Products-box:nth-child(3),
+.Products-box:nth-child(2),
+.Products-box:nth-child(5),
+.Products-box:nth-child(6) {
+    border-left: none;
+}
+
+.Products-box {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.Products-box:hover::before {
+    content: 'Hızlı Görünüm';
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #32025a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.Products-box:hover::before {
+    opacity: 1;
+}
+
+.Products-box:hover {
+    z-index: 1;
+    /* Div öne çıkacak */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Kenar gölgelikleri */
+}
+
+.Marka-section {
+    display: grid;
+    max-width: 1400px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px auto;
+    gap: 10px;
+}
+
+.Marka-box {
+    background-color: #c0c0c2;
+    padding: 20px;
+}
+
+.Marka-box-div {
+    background-color: #222529;
+}
+
+.Marka-box-img {
+    width: 150px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.Marka-box-h3 {
+    font-size: 46px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 30px;
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.Marka-box-div-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    gap: 20px;
+
+}
+
+.Marka-box-div-two-p {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.Marka-box-div-two button {
+    padding: 15px;
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-weight: 700;
+}
+
+.Message-section {
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    align-items: center;
+    background-color: #222529;
+
+}
+
+.Message-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Message-box-p {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.Message-section-img {
+    width: 50px;
+
+}
+
+.Message-boxp {
+    color: #555;
+}
+
+.form-control {
+    padding: 0px 2.4rem 2px 2.4rem;
+    height: 4.8rem;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    border-radius: 2.4rem 0 0 2.4rem;
+    width: 350px;
+}
+
+.btn {
+    height: 4.8rem;
+    padding: 0 4rem 3px 4rem;
+    border: 0;
+    background: #e7e7e7;
+    border-radius: 0 2.4rem 2.4rem 0;
+    margin-left: -5px;
+}
+
+.brand-section {
+    width: 100%;
+    background-color: #c0c0c2;
+
+
+}
+
+.brand-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-box {
+    margin: 10px auto;
+    padding: 25px;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-box-alt-box {
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.brand-box-alt {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+
+}
+
+.brand-box-alt h5 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: none;
+}
+
+.brand-box-alt h5 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: none;
+}
+
+
+.brand-box-alt img {
+    width: 200px;
+    margin-top: 25px;
+}
+
+.brand-box-title {
+    color: #222529;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: none;
+}
+
+
+.section-5-title {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: none;
+}
+
+
+.Products-section-two {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1400px;
+}
+
+.Products-sections {
+    width: 100%;
+    background-color: #c0c0c2;
+}
+
+.shop-section {
+    padding: 50px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.shop-section-h3 {
+    color: #222529;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.shop-section-box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 20px auto;
+    text-align: center;
+    gap: 20px;
+
+}
+
+.shop-section-button {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    background-color: #222529;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+
+}
+
+.shop-section-button:hover {
+    background-color: #555;
+}
+
+.footer-nav {
+    margin-top: 10px;
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.header-logo-w-0 {
+    width: 30px;
+}
+
+.footer-nav-box {
+    gap: 25px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-social-iletişim p {
+    font-size: 24px;
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+.footer-nav-box h6 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+.footer-social-iletişim {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav-box {
+    row-gap: 20px;
+    max-width: 500px;
+}
+
+.footer-nav-box p {
+    margin-top: 10px;
+}
+
+.footer-social-iletişim-box {
+    display: flex;
+}
+
+.footer-içindeki {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-hesabım h3 {
+    font-weight: 700;
+}
+
+.footer-pay {
+    width: 100%;
+    background-color: #222529;
+}
+
+.footer-pay-card {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-pay-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.hamburger-menu img {
+    width: 30px;
+    height: auto;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.header-nav-link-1 {
+    display: none;
+}
+
+.header-nav-link-1.show-menu {
+    display: block;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .header-nav-link-2 {
+        display: none;
+    }
+
+    .header-nav-link-1 {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .Products-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        border: none;
+
+    }
+
+    .Marka-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Message-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Küçük cihazlar (telefonlar, 768 piksel ve altı) */
+@media only screen and (max-width: 768px) {
+
+    /* Başlık kutusu */
+    .header-box {
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    /* Menü linkleri */
+    .header-nav-link-1 {
+        display: none;
+    }
+
+    .header-nav-link-2 {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Ürünler bölümü */
+    .Products-section {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 5px auto;
+    }
+
+    .Products-box {
+        padding: 5px;
+        border: none;
+        gap: 25px;
+    }
+
+    .Products-box-div {
+        border: none;
+    }
+
+    /* Marka bölümü */
+    .Marka-section {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px auto;
+    }
+
+    .Marka-box {
+        padding: 10px;
+    }
+
+    /* Mesaj bölümü */
+    .Message-section {
+        padding: 5px;
+    }
+
+    .Message-box-p {
+        font-size: 18px;
+    }
+
+    .Products-section-two {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px auto;
+        padding: 30px;
+        border: none;
+    }
+
+    .brand-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+
+    }
+
+    .brand-box-alt {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mesage-input {
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+        margin-top: 25px;
+
+    }
+
+    .form-control{
+        max-width: 150px;
+    }
+
+    .btn{
+        max-width: 50px;
+    }
+
+
+    /* Footer bölümü */
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footer-pay-box{
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
+        padding: 10px;
+    }
+
+}
+
+/* Orta ve büyük cihazlar */
+@media only screen and (min-width: 769px) {
+
+    /* Menü linkleri */
+    .header-nav-link-1 {
+        display: flex;
+    }
+
+    .header-nav-link-2 {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    /* Ürünler bölümü */
+    .Products-section {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10px auto;
+    }
+
+    .Products-box {
+        padding: 10px;
+    }
+
+    /* Marka bölümü */
+    .Marka-section {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 30px auto;
+    }
+
+    .Marka-box {
+        padding: 20px;
+    }
+
+    /* Mesaj bölümü */
+    .Message-section {
+        padding: 10px 50px;
+    }
+
+    .Message-box-p {
+        font-size: 24px;
+    }
+
+    /* Footer bölümü */
+    .footer-nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}

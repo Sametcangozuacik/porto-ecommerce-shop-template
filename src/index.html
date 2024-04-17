@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto-ecommerce-shop-template</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="shraed.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https: //fonts.googleapis.com/css2?family= Poppins :wght@500 & display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header-box">
+        <ul class="header-nav-link-1">
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Mağaza</a></li>
+            <li><a href="#">Ürünler</a></li>
+            <li><a href="#">Sayfalar</a></li>
+        </ul>
+        <img class="header-logo w-0" src="images/logo-black.png" alt="logo-black">
+        <ul class="header-nav-link-2">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">Elementler</a></li>
+            <li><a href="#">Port Satın Al!</a></li>
+        </ul>
+        <div class="hamburger-menu">
+            <img src="images/hamburger-menu.png" alt="Hamburger Menu">
+        </div>
+    </header>
+    <section class="porto-promotion">
+        <div class="container">
+            <div id="imageContainer">
+                <img id="firstImage" src="images/tanıtım .jpg">
+                <img id="secondImage" src="images/tanıtım-2.jpg" class="hidden">
+            </div>
+            <button class="arrow-button left" onclick="toggleImages('left')">
+                <img src="images/arrow-left-solid.svg" alt="Sol Ok">
+            </button>
+            <button class="arrow-button right" onclick="toggleImages('right')">
+                <img src="images/arrow-right-solid.svg" alt="Sağ Ok">
+            </button>
+        </div>
+    </section>
+    <section class="Products-section bg-white">
+        <div class="Products-box">
+            <img class="Products-box-img" src="images/product-1.jpg" alt="">
+            <div class="Products-box-div">
+                <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                <h5 class="Products-box-h5">Aerin Gül Yağı</h5>
+                <h6 class="Products-box-h6">₺ 39.00</h6>
+            </div>
+        </div>
+        <div class="Products-box">
+            <img class="Products-box-img" src="images/product-2.jpg" alt="">
+            <div class="Products-box-div">
+                <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                <h5 class="Products-box-h5">Güzellik Ürünleri</h5>
+                <h6 class="Products-box-h6">₺ 89.00</h6>
+            </div>
+        </div>
+        <div class="Products-box">
+            <img class="Products-box-img" src="images/product-3-2.jpg" alt="">
+            <div class="Products-box-div">
+                <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                <h5 class="Products-box-h5">Güzellik Yıkama</h5>
+                <h6 class="Products-box-h6">₺ 59.00</h6>
+            </div>
+        </div>
+        <div class="Products-box">
+            <img class="Products-box-img" src="images/product-4.jpg" alt="">
+            <div class="Products-box-div">
+                <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                <h5 class="Products-box-h5">
+                    Blue High Hill</h5>
+                <h6 class="Products-box-h6">₺101.00 - ₺111.00</h6>
+            </div>
+        </div>
+        <div class="Products-box">
+            <img class="Products-box-img" src="images/product-5.jpg" alt="">
+            <div class="Products-box-div">
+                <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                <h5 class="Products-box-h5">Kozmetik çantası</h5>
+                <h6 class="Products-box-h6">₺ 259.00</h6>
+            </div>
+        </div>
+        <div class="Products-box">
+            <img class="Products-box-img" src="images/product-6-2.jpg" alt="">
+            <div class="Products-box-div">
+                <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                <h5 class="Products-box-h5">Aerin Rose Oil</h5>
+                <h6 class="Products-box-h6">₺ 129.00</h6>
+            </div>
+        </div>
+    </section>
+    <section class="Marka-section">
+        <div class="Marka-box">
+            <div class="Marka-box-div">
+                <img class="Marka-box-img" src="images/brand-1.png" alt="">
+                <div>
+                    <h3 class="Marka-box-h3 text-3xl">50% İndirim</h3>
+                </div>
+                <div class="Marka-box-div-two">
+                    <p class="Marka-box-div-two-p  bg-white">Başlangıç ₺ 1.99 </p>
+                    <button>Şimdi satın al →</button>
+                </div>
+            </div>
+        </div>
+        <div class="Marka-box">
+            <div class="Marka-box-div">
+                <img class="Marka-box-img" src="images/brand-2.png" alt="">
+                <div>
+                    <h3 class="Marka-box-h3 text-3xl">60% İndirim</h3>
+                </div>
+                <div class="Marka-box-div-two">
+                    <p class="Marka-box-div-two-p  bg-white">Başlangıç ₺ 5.99 </p>
+                    <button>Şimdi satın al →</button>
+                </div>
+            </div>
+        </div>
+        <div class="Marka-box">
+            <div class="Marka-box-div">
+                <img class="Marka-box-img" src="images/brand-3.png" alt="">
+                <div>
+                    <h3 class="Marka-box-h3 text-3xl">70% İndirim</h3>
+                </div>
+                <div class="Marka-box-div-two">
+                    <p class="Marka-box-div-two-p  bg-white">Başlangıç ₺ 4.99 </p>
+                    <button>Şimdi satın al →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Message-section">
+        <div class="Message-box">
+            <img class="Message-section-img" src="images/envelope-solid.svg" alt="envelope">
+            <div>
+                <p class="Message-box-p">Özel Teklifler ve Tasarruflardan Faydalanın</p>
+                <p class="Message-boxp bg colo">Etkinlikler, Satışlar ve Teklifler hakkındaki en son bilgileri alın.</p>
+            </div>
+        </div>
+        <div class="mesage-input">
+            <input class="form-control mb-0 border-0" type="text" placeholder="Email Your E-mail Address..." />
+            <button class="btn text-dark ls-n-25">SIGN UP</button>
+
+    </section>
+    <section class="Products-sections bg-white">
+        <div class="Products-section-two">
+            <div class="Products-box">
+                <img class="Products-box-img" src="images/product-1.jpg" alt="">
+                <div class="overlay">
+                </div>
+                <div>
+                    <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                    <h5 class="Products-box-h5">Aerin Gül Yağı</h5>
+                    <h6 class="Products-box-h6">₺ 39.00</h6>
+                </div>
+            </div>
+            <div class="Products-box">
+                <img class="Products-box-img" src="images/product-2.jpg" alt="">
+                <div>
+                    <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                    <h5 class="Products-box-h5">Güzellik Ürünleri</h5>
+                    <h6 class="Products-box-h6">₺ 89.00</h6>
+                </div>
+            </div>
+            <div class="Products-box">
+                <img class="Products-box-img" src="images/product-3-2.jpg" alt="">
+                <div>
+                    <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                    <h5 class="Products-box-h5">Güzellik Yıkama</h5>
+                    <h6 class="Products-box-h6">₺ 59.00</h6>
+                </div>
+            </div>
+            <div class="Products-box">
+                <img class="Products-box-img" src="images/product-4.jpg" alt="">
+                <div>
+                    <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                    <h5 class="Products-box-h5">
+                        Blue High Hill</h5>
+                    <h6 class="Products-box-h6">₺101.00 - ₺111.00</h6>
+                </div>
+            </div>
+            <div class="Products-box">
+                <img class="Products-box-img" src="images/product-5.jpg" alt="">
+                <div>
+                    <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                    <h5 class="Products-box-h5">Kozmetik çantası</h5>
+                    <h6 class="Products-box-h6">₺ 259.00</h6>
+                </div>
+            </div>
+            <div class="Products-box">
+                <img class="Products-box-img" src="images/product-6-2.jpg" alt="">
+                <div>
+                    <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                    <h5 class="Products-box-h5">Aerin Rose Oil</h5>
+                    <h6 class="Products-box-h6">₺ 129.00</h6>
+                </div>
+            </div>
+            <div class="Products-box">
+                <img class="Products-box-img" src="images/product-6-2.jpg" alt="">
+                <div>
+                    <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                    <h5 class="Products-box-h5">Aerin Rose Oil</h5>
+                    <h6 class="Products-box-h6">₺ 129.00</h6>
+                </div>
+            </div>
+            <div class="Products-box">
+                <img class="Products-box-img" src="images/product-6-2.jpg" alt="">
+                <div>
+                    <p class="Products-box-p">YÜZ, DUDAKLAR</p>
+                    <h5 class="Products-box-h5">Aerin Rose Oil</h5>
+                    <h6 class="Products-box-h6">₺ 129.00</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shop-section bg bg-white">
+        <h3 class="shop-section-h3">Kategoriye Göre Alışveriş</h3>
+        <div class="shop-section-box">
+            <button class="shop-section-button">Uygula</button>
+            <button class="shop-section-button">Fırçalar</button>
+            <button class="shop-section-button">Kontrol Etmek</button>
+        </div>
+        <div class="shop-section-box">
+            <button class="shop-section-button">Kaş</button>
+            <button class="shop-section-button">Gözler</button>
+            <button class="shop-section-button">Yüz</button>
+        </div>
+    </section>
+    <section class="brand-section">
+        <div class="brand-box">
+            <div>
+                <div class="brand-title"></div>
+                <h3 class="brand-box-title">Son Haberler
+                </h3>
+                <div class="brand-box-alt">
+                    <img src="images/1-1.jpg" alt="">
+                    <div>
+                        <h5>Top Cosmetics Collection</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eveniet.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+            <div class="brand-title"></div>
+            <h3 class="brand-box-title">En Son Ürün İncelemeleri
+            </h3>
+            <div class="brand-box-alt">
+                <div class="brand-box-alt-box">
+                    <h6>Summer High Hill</h6>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eveniet.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-nav">
+            <div class="footer-nav-box">
+                <img class="header-logo w-0" src="images/logo-black.png" alt="logo-black">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent pulvinar feugiat quam, vitae aliquam.</p>
+                <h6>İletişim</h6>
+                <div class="footer-social-iletişim">
+                    <p>1-888-123-456</p>
+
+                    <img class="header-logo-w-0" src="images/facebook.svg" alt="">
+                    <img class="header-logo-w-0" src="images/instagram.svg" alt="">
+                    <img class="header-logo-w-0" src="images/twitter.svg" alt="">
+                </div>
+            </div>
+            <div class="footer-hesabım">
+                <h3>Hesabım</h3>
+                <div class="footer-içindeki">
+                    <a href="#">Hesabım</a>
+                    <a href="#">Siparişinizi takip edin</a>
+                    <a href="#">Ödeme metodları</a>
+                    <a href="#">Gönderim Kılavuzu</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Ürün desteği</a>
+                    <a href="#">Mahremiyet</a>
+                </div>
+            </div>
+            <div class="footer-hesabım">
+                <h3>Hesabım</h3>
+                <div class="footer-içindeki">
+                    <a href="#">Hesabım</a>
+                    <a href="#">Siparişinizi takip edin</a>
+                    <a href="#">Ödeme metodları</a>
+                    <a href="#">Gönderim Kılavuzu</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Ürün desteği</a>
+                    <a href="#">Mahremiyet</a>
+                </div>
+            </div>
+            <div class="footer-hesabım">
+                <h3>Hesabım</h3>
+                <div class="footer-içindeki">
+                    <a href="#">Hesabım</a>
+                    <a href="#">Siparişinizi takip edin</a>
+                    <a href="#">Ödeme metodları</a>
+                    <a href="#">Gönderim Kılavuzu</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Ürün desteği</a>
+                    <a href="#">Mahremiyet</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-pay">
+            <div class="footer-pay-box">
+                <p>© Porto eCommerce 2021. All Rights Reserved</p>
+                <div class="footer-pay-card">
+                    <img class="header-logo-w-0" src="images/cc-visa.svg" alt="">
+                    <img class="header-logo-w-0" src="images/cc-mastercard.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
